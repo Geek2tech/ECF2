@@ -3,17 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/main.css">
-
-    <title>Dice Game</title>
+    <title>Title</title>
 </head>
 <body>
 
+<div class="container box ">
+    <div class="row justify-content-center newGame">NEW GAME</div>
+    <!-- ligne Player -->
+    <div class="row text-center">
+        <div class="col-5 d-flex flex-column">
+            <h1 class="playerName activePlayer">PLAYER 1</h1>
+        </div>
+        <div class="col"></div>
+        <div class="col-5 d-flex flex-column">
+            <h1 class="playerName">PLAYER 2</h1>
+        </div>
+    </div>
+    <!-- ligne score / Des / Score -->
+    <div class="row text-center align-items-center">
+        <h2 class="totalScore col-5" id="totalScorePlayer1">Score</h2>
+        <p class="col justify-content-center">CUBE</p>
+        <h2 class="totalScore col-5" id="totalScorePlayer2">Score</h2>
+    </div>
+    <!-- ligne Current , Roll / Hodl / Current -->
+    <div class="row text-center currentScoreLine">
+        <div class="col-5 d-flex flex-column align-items-center ">
+        <div class="currentScore">
+
+            <p class="currentTitle">CURRENT</p>
+            <p class="currentScoreNb" id="currentScorePlayer1">11</p>
+        </div>
+        </div>
+        <div class="col d-flex flex-column">
+            <p class=" text-center ">ROLL DICE</p>
+            <p class="text-center">HOLD</p>
+        </div>
+        <div class="col-5 d-flex flex-column align-items-center ">
+            <div class="currentScore">
+            <p class="currentTitle">CURRENT</p>
+            <p class="currentScoreNb" id="currentScorePlayer2">11</p>
+            </div>
+        </div>
+    </div>
+
+</div>
 
 
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery-3.7.0.js"></script>
-<script src="js/main.js"></script>
 </body>
 </html>
