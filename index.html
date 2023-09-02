@@ -18,20 +18,20 @@
     <!-- ligne Player -->
     <div class="row text-center">
         <div class="col-5 d-flex flex-column">
-            <h1 class="playerName activePlayer">PLAYER 1<span><img class="activePoint" src="assets/images/Point.png"
+            <h1 class="playerName activePlayer">PLAYER 1<span><img id='player1Point' class="activePoint" src="assets/images/Point.png"
                                                                    alt="Point Actif"></span></h1>
         </div>
         <div class="col"></div>
         <div class="col-5 d-flex flex-column">
-            <h1 class="playerName">PLAYER 2<span><img class="activePoint invisible" src="assets/images/Point.png"
+            <h1 class="playerName">PLAYER 2<span><img  id="player2Point" class="activePoint invisible" src="assets/images/Point.png"
                                                       alt="Point Actif"></span></h1>
         </div>
     </div>
     <!-- ligne score / Des / Score -->
     <div class="row text-center align-items-center">
-        <h2 class="totalScore col-5" id="totalScorePlayer1">43</h2>
-        <p class="col justify-content-center "><img src="assets/images/Blanc_4.svg" class="dés" alt="dés"></p>
-        <h2 class="totalScore col-5" id="totalScorePlayer2">72</h2>
+        <h2 class="totalScore col-5" id="totalScorePlayer1">5</h2>
+        <p class="col justify-content-center "><img src="assets/images/Blanc_5.svg" class="dés" alt="dés"></p>
+        <h2 class="totalScore col-5" id="totalScorePlayer2">10</h2>
     </div>
     <!-- ligne Current , Roll / Hodl / Current -->
     <div class="row text-center currentScoreLine">
@@ -39,7 +39,7 @@
             <div class="currentScore">
 
                 <p class="currentTitle">CURRENT</p>
-                <p class="currentScoreNb" id="currentScorePlayer1">11</p>
+                <p class="currentScoreNb" id="currentScorePlayer1">0</p>
             </div>
         </div>
         <div class="col d-flex flex-column">
@@ -49,13 +49,14 @@
         <div class="col-5 d-flex flex-column align-items-center ">
             <div class="currentScore">
                 <p class="currentTitle">CURRENT</p>
-                <p class="currentScoreNb" id="currentScorePlayer2">11</p>
+                <p class="currentScoreNb" id="currentScorePlayer2">0</p>
             </div>
         </div>
     </div>
 
 </div>
 
-<script src="js/jquery-3.7.0.js"></script>
+<script src="./js/jquery-3.7.0.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>
