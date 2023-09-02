@@ -9,47 +9,53 @@
 </head>
 <body>
 
-<div class="container box ">
-    <div class="row justify-content-center newGame">NEW GAME</div>
+<div class="container box justify-content-center align-items-center">
+    <div class="row ">
+    <div class="col text-center newGame">
+        <span><img src="./assets/images/plus.svg" alt="" class="icons"></span>NEW GAME</div>
+    </div>
+
     <!-- ligne Player -->
     <div class="row text-center">
         <div class="col-5 d-flex flex-column">
-            <h1 class="playerName activePlayer">PLAYER 1</h1>
+            <h1 class="playerName activePlayer">PLAYER 1<span><img class="activePoint" src="assets/images/Point.png"
+                                                                   alt="Point Actif"></span></h1>
         </div>
         <div class="col"></div>
         <div class="col-5 d-flex flex-column">
-            <h1 class="playerName">PLAYER 2</h1>
+            <h1 class="playerName">PLAYER 2<span><img class="activePoint invisible" src="assets/images/Point.png"
+                                                      alt="Point Actif"></span></h1>
         </div>
     </div>
     <!-- ligne score / Des / Score -->
     <div class="row text-center align-items-center">
-        <h2 class="totalScore col-5" id="totalScorePlayer1">Score</h2>
-        <p class="col justify-content-center">CUBE</p>
-        <h2 class="totalScore col-5" id="totalScorePlayer2">Score</h2>
+        <h2 class="totalScore col-5" id="totalScorePlayer1">43</h2>
+        <p class="col justify-content-center "><img src="assets/images/Blanc_4.svg" class="dés" alt="dés"></p>
+        <h2 class="totalScore col-5" id="totalScorePlayer2">72</h2>
     </div>
     <!-- ligne Current , Roll / Hodl / Current -->
     <div class="row text-center currentScoreLine">
         <div class="col-5 d-flex flex-column align-items-center ">
-        <div class="currentScore">
+            <div class="currentScore">
 
-            <p class="currentTitle">CURRENT</p>
-            <p class="currentScoreNb" id="currentScorePlayer1">11</p>
-        </div>
+                <p class="currentTitle">CURRENT</p>
+                <p class="currentScoreNb" id="currentScorePlayer1">11</p>
+            </div>
         </div>
         <div class="col d-flex flex-column">
-            <p class=" text-center ">ROLL DICE</p>
-            <p class="text-center">HOLD</p>
+            <p class=" text-center rollDice"><span><img src="./assets/images/rafraîchir.svg" alt="rafraichir" class="icons"></span> ROLL DICE</p>
+            <p class="text-center hold"><span><img src="assets/images/entrer-50.png" class="icons"></span>HOLD</p>
         </div>
         <div class="col-5 d-flex flex-column align-items-center ">
             <div class="currentScore">
-            <p class="currentTitle">CURRENT</p>
-            <p class="currentScoreNb" id="currentScorePlayer2">11</p>
+                <p class="currentTitle">CURRENT</p>
+                <p class="currentScoreNb" id="currentScorePlayer2">11</p>
             </div>
         </div>
     </div>
 
 </div>
 
-
+<script src="js/jquery-3.7.0.js"></script>
 </body>
 </html>
