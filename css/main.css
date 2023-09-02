@@ -58,7 +58,7 @@ body {
     color: #8c8c8b;
 }
 
-.newGame {
+#newGame {
     /* transform: translateY(125px);*/
     color: #c0c0c0;
     padding-top: 35px;
@@ -68,7 +68,7 @@ body {
     margin-top: 180px;
 }
 
-.dés {
+#dés {
     width: 130px;
     background-color: white;
     box-shadow: 2px 1px 15px #f5f5f5;
@@ -79,11 +79,16 @@ body {
     transform: translateX(20px);
 }
 
-.rollDice {
+#rollDice {
     color: #c0c0c0;
+
+}
+button{
+    border: none;
+    background: none;
 }
 
-.hold {
+#hold {
     color: #c0c0c0;
 }
 .icons{

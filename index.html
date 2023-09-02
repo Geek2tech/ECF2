@@ -11,8 +11,9 @@
 
 <div class="container box justify-content-center align-items-center">
     <div class="row ">
-    <div class="col text-center newGame">
-        <span><img src="./assets/images/plus.svg" alt="" class="icons"></span>NEW GAME</div>
+    <div class="col text-center" >
+        <button id="newGame"><span><img src="./assets/images/plus.svg" alt="" class="icons"></span>NEW GAME</button>
+    </div>
     </div>
 
     <!-- ligne Player -->
@@ -30,7 +31,7 @@
     <!-- ligne score / Des / Score -->
     <div class="row text-center align-items-center">
         <h2 class="totalScore col-5" id="totalScorePlayer1">5</h2>
-        <p class="col justify-content-center "><img src="assets/images/Blanc_5.svg" class="dés" alt="dés"></p>
+        <p class="col justify-content-center "><img src="assets/images/Blanc_5.svg" id="dés" alt="dés"></p>
         <h2 class="totalScore col-5" id="totalScorePlayer2">10</h2>
     </div>
     <!-- ligne Current , Roll / Hodl / Current -->
@@ -43,8 +44,8 @@
             </div>
         </div>
         <div class="col d-flex flex-column">
-            <p class=" text-center rollDice"><span><img src="./assets/images/rafraîchir.svg" alt="rafraichir" class="icons"></span> ROLL DICE</p>
-            <p class="text-center hold"><span><img src="assets/images/entrer-50.png" class="icons"></span>HOLD</p>
+            <button class=" text-center" id="rollDice"><span><img src="./assets/images/rafraîchir.svg" alt="rafraichir" class="icons"></span> ROLL DICE</button>
+            <button class="text-center" id="hold"><span><img src="assets/images/entrer-50.png" class="icons"></span>HOLD</button>
         </div>
         <div class="col-5 d-flex flex-column align-items-center ">
             <div class="currentScore">
