@@ -102,22 +102,23 @@ button {
 
 @media (max-width: 479px){
     #dés{
-        width: 50px;
+        width: 27px;
     }
     .playerName{
-        font-size: 1.2em;
+        font-size: 1em;
     }
     .totalScore{
         font-size: 2em;
     }
     .activePoint{
-        width: 15px;
+        width: 10px;
     }
     .currentScore{
         width: 87px;
     }
     #lastLineButton{
         width: 20px;
+        font-size: 0.7em;
     }
 }
 
