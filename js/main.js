@@ -9,10 +9,14 @@ $(document).ready(() => {
         if ($('#player1Point').hasClass('invisible')) {
             $('#player1Point').removeClass('invisible')
             $('#player2Point').addClass('invisible')
+            $('#player2Name').removeClass('activePlayer')
+            $('#player1Name').addClass('activePlayer')
             player = 'Player1'
         } else {
             $('#player1Point').addClass('invisible')
             $('#player2Point').removeClass('invisible')
+            $('#player1Name').removeClass('activePlayer')
+            $('#player2Name').addClass('activePlayer')
             player = 'Player2'
         }
     }
@@ -24,8 +28,12 @@ $(document).ready(() => {
         $('#currentScorePlayer2').html(0)
         // place the Red point on Player 1
         if ($('#player1Point').hasClass('invisible')) {
-            $(this).removeClass('invisible')
+            $('#player1Point').removeClass('invisible')
+            $('#player1Name').addClass('activePlayer')
+
             $('#player2Point').addClass(('invisible'))
+            $('#player2Name').removeClass('activePlayer')
+
         }
         //set the good dice picture
         $('#dés').prop('src', "assets/images/Blanc_5.svg")
