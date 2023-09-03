@@ -11,28 +11,30 @@
 
 <div class="container box justify-content-center align-items-center">
     <div class="row ">
-    <div class="col text-center" >
-        <button id="newGame"><span><img src="./assets/images/plus.svg" alt="" class="icons"></span>NEW GAME</button>
-    </div>
+        <div class="col text-center">
+            <button id="newGame"><span><img src="./assets/images/plus.svg" alt="" class="icons"></span>NEW GAME</button>
+        </div>
     </div>
 
     <!-- ligne Player -->
     <div class="row text-center">
         <div class="col-5 d-flex flex-column">
-            <h1 class="playerName activePlayer">PLAYER 1<span><img id='player1Point' class="activePoint" src="assets/images/Point.png"
+            <h1 class="playerName activePlayer">PLAYER 1<span><img id='player1Point' class="activePoint"
+                                                                   src="assets/images/Point.png"
                                                                    alt="Point Actif"></span></h1>
         </div>
         <div class="col"></div>
         <div class="col-5 d-flex flex-column">
-            <h1 class="playerName">PLAYER 2<span><img  id="player2Point" class="activePoint invisible" src="assets/images/Point.png"
+            <h1 class="playerName">PLAYER 2<span><img id="player2Point" class="activePoint invisible"
+                                                      src="assets/images/Point.png"
                                                       alt="Point Actif"></span></h1>
         </div>
     </div>
     <!-- ligne score / Dice / Score -->
     <div class="row text-center align-items-center">
-        <h2 class="totalScore col-5" id="totalScorePlayer1">5</h2>
+        <h2 class="totalScore col-5" id="totalScorePlayer1">0</h2>
         <p class="col justify-content-center "><img src="assets/images/Blanc_5.svg" id="dés" alt="dés"></p>
-        <h2 class="totalScore col-5" id="totalScorePlayer2">10</h2>
+        <h2 class="totalScore col-5" id="totalScorePlayer2">0</h2>
     </div>
     <!-- ligne Current , Roll / Hodl / Current -->
     <div class="row text-center currentScoreLine">
@@ -44,8 +46,12 @@
             </div>
         </div>
         <div class="col d-flex flex-column">
-            <button class=" text-center" id="rollDice"><span><img src="./assets/images/rafraîchir.svg" alt="rafraichir" class="icons"></span> ROLL DICE</button>
-            <button class="text-center" id="hold"><span><img src="assets/images/entrer-50.png" class="icons"></span>HOLD</button>
+            <button class=" text-center" id="rollDice"><span><img src="./assets/images/rafraîchir.svg"
+                                                                  alt="RollDice Icon" class="icons"></span> ROLL DICE
+            </button>
+            <button class="text-center" id="hold"><span><img src="assets/images/entrer-50.png" alt="HoldIcon"
+                                                             class="icons"></span>HOLD
+            </button>
         </div>
         <div class="col-5 d-flex flex-column align-items-center ">
             <div class="currentScore">

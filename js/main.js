@@ -5,22 +5,19 @@ $(document).ready(() => {
 
 // function to change player
 
-    function changePlayer(){
-        if ($('#player1Point').hasClass('invisible')){
+    function changePlayer() {
+        if ($('#player1Point').hasClass('invisible')) {
             $('#player1Point').removeClass('invisible')
             $('#player2Point').addClass('invisible')
             player = 'Player1'
-        }else {
+        } else {
             $('#player1Point').addClass('invisible')
             $('#player2Point').removeClass('invisible')
             player = 'Player2'
         }
     }
-    // reset board function
-    // New game
-    // reset all score and active Player 1
-    $('#newGame').on('click', function () {
-        // Reinit the score
+
+    function resetBoard() {
         $('#totalScorePlayer1').html('0')
         $('#totalScorePlayer2').html(0)
         $('#currentScorePlayer1').html(0)
@@ -33,6 +30,14 @@ $(document).ready(() => {
         //set the good dice picture
         $('#dés').prop('src', "assets/images/Blanc_5.svg")
         player = 'Player1'
+    }
+
+    // reset board function
+    // New game
+    // reset all score and active Player 1
+    $('#newGame').on('click', function () {
+        // Reinit the score
+        resetBoard()
     })
 
 
@@ -49,6 +54,7 @@ $(document).ready(() => {
             $('#currentScore' + player).text((parseInt($('#currentScore' + player).text())) + dice)
         } else {
             $('#currentScore' + player).text(0)
+
             changePlayer()
         }
     })
@@ -58,9 +64,14 @@ $(document).ready(() => {
     $('#hold').on('click', function () {
 
         // add current score to total score
-        $('#totalScore' + player).text(parseInt($('#totalScore' + player).text()) + parseInt($('#currentScore' + player).text()))
+        $('#totalScore' + player).text(parseInt($('#totalScore' + player).text())
+            + parseInt($('#currentScore' + player).text()))
         $('#currentScore' + player).text(0)
-
+// verify is total score >= 100
+        if (parseInt($('#totalScore' + player).text()) >= 100) {
+            alert(` ${player} a reporté la partie !!! `)
+            resetBoard()
+        }
         //changing the active player
         changePlayer()
 

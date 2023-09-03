@@ -13,12 +13,12 @@ body {
     background-repeat: no-repeat;
 }
 
-
 .container {
     max-width: 1200px;
     min-width: 950px;
     margin-top: 50px;
     font-family: Lato, sans-serif;
+
 
 }
 
@@ -83,7 +83,8 @@ body {
     color: #c0c0c0;
 
 }
-button{
+
+button {
     border: none;
     background: none;
 }
@@ -91,8 +92,10 @@ button{
 #hold {
     color: #c0c0c0;
 }
-.icons{
+
+.icons {
     width: 24px;
     height: 24px;
-margin-right: 10px;
+    margin-right: 10px;
+
 }
