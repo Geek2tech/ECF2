@@ -10,14 +10,14 @@
 <body>
 
 <div class="container box justify-content-center align-items-center">
-    <div class="row ">
-        <div class="col text-center">
+    <div class="row">
+        <div class="col text-center ">
             <button id="newGame"><span><img src="./assets/images/plus.svg" alt="" class="icons"></span>NEW GAME</button>
         </div>
     </div>
 
     <!-- ligne Player -->
-    <div class="row text-center">
+    <div class="row text-center ">
         <div class="col-5 d-flex flex-column">
             <h1 id="player1Name" class="playerName activePlayer">PLAYER 1<span><img id='player1Point' class="activePoint"
                                                                    src="assets/images/Point.png"
@@ -45,7 +45,7 @@
                 <p class="currentScoreNb" id="currentScorePlayer1">0</p>
             </div>
         </div>
-        <div class="col d-flex flex-column">
+        <div class="col d-flex flex-column" id="lastLineButton">
             <button class=" text-center" id="rollDice"><span><img src="./assets/images/rafraîchir.svg"
                                                                   alt="RollDice Icon" class="icons"></span> ROLL DICE
             </button>

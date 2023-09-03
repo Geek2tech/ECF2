@@ -15,7 +15,7 @@ body {
 
 .container {
     max-width: 1200px;
-    min-width: 950px;
+
     margin-top: 50px;
     font-family: Lato, sans-serif;
 
@@ -98,4 +98,47 @@ button {
     height: 24px;
     margin-right: 10px;
 
+}
+
+@media (max-width: 479px){
+    #dés{
+        width: 27px;
+    }
+    .playerName{
+        font-size: 1em;
+    }
+    .totalScore{
+        font-size: 2em;
+    }
+    .activePoint{
+        width: 10px;
+    }
+    .currentScore{
+        width: 87px;
+    }
+    #lastLineButton{
+        width: 20px;
+        font-size: 0.7em;
+    }
+}
+
+
+
+@media (min-width: 480px) and (max-width: 991px){
+
+    #dés{
+        width: 50px;
+    }
+.totalScore{
+    font-size: 4em;
+}
+.currentScore{
+    width: 130px;
+}
+.activePoint{
+    width: 15px;
+}
+    #lastLineButton{
+        width: 20px;
+    }
 }
