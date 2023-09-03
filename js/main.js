@@ -79,9 +79,10 @@ $(document).ready(() => {
         if (parseInt($('#totalScore' + player).text()) >= 100) {
             alert(` ${player} a reporté la partie !!! `)
             resetBoard()
+        }else {
+            //changing the active player
+            changePlayer()
         }
-        //changing the active player
-        changePlayer()
 
     })
 
