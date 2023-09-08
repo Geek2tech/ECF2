@@ -27,3 +27,4 @@ Le jeu comprend 2 joueurs sur un seul et même écran.
 - Jquery
 
 Le site est visible ici : https://geek2techdicegame.netlify.app
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2a3835ee-988a-4e2e-bd32-03c08f8de362/deploy-status)](https://app.netlify.com/sites/geek2techdicegame/deploys)
